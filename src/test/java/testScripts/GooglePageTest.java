@@ -50,7 +50,7 @@ public class GooglePageTest {
 //	System.out.println(driver.getTitle());
 //	System.out.println(driver.getCurrentUrl());
 //	driver.navigate().forward();
-//	System.out.println(driver.getCurrentUrl());
+	System.out.println(driver.getCurrentUrl());
 	driver.findElement(By.linkText("Elemental Selenium")).click();
 	//driver.findElement(By.partialLinkText("Elemental")).click();
   }
