@@ -36,15 +36,21 @@ public class GooglePageTest {
 	//WebElement name = driver.findElement(By.xpath("//input[@name='username' and @id='username']"));
 	WebElement name = driver.findElement(By.cssSelector("#username"));
 	name.sendKeys("tomsmith");
+	name.clear();
+	name.sendKeys("welcometomsmith");
 	WebElement pwd = driver.findElement(By.id("password"));
 	pwd.sendKeys("SuperSecretPassword!");
+	pwd.sendKeys(Keys.ENTER);
 	//WebElement btnLogin = driver.findElement(By.className("radius"));
 	WebElement btnLogin = driver.findElement(By.xpath("//i[@class='fa fa-2x fa-sign-in']"));
 	//WebElement btnLogin = driver.findElement(By.cssSelector("i.fa.fa-2x.fa-sign-in"));
 	//*[@id="login"]/button/i
 	//fa fa-2x fa-sign-in
 	//WebElement btnLogin = driver.findElement(By.tagName("button"));
-	btnLogin.click();
+	//btnLogin.click();
+//	btnLogin.submit();
+	
+	
 	
 //	driver.navigate().back();
 //	System.out.println(driver.getTitle());

@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-25T17:45:39 IST" name="Default suite" finished-at="2025-03-25T17:45:43 IST" duration-ms="4325">
+  <suite started-at="2025-03-27T17:49:11 IST" name="Default suite" finished-at="2025-03-27T17:49:22 IST" duration-ms="10800">
     <groups>
     </groups>
-    <test started-at="2025-03-25T17:45:39 IST" name="Default test" finished-at="2025-03-25T17:45:43 IST" duration-ms="4325">
-      <class name="testScripts.RelativeLocatorTest">
-        <test-method signature="relativeLoc()[pri:0, instance:testScripts.RelativeLocatorTest@791f145a]" started-at="2025-03-25T17:45:39 IST" name="relativeLoc" finished-at="2025-03-25T17:45:43 IST" duration-ms="4258" status="PASS">
+    <test started-at="2025-03-27T17:49:11 IST" name="Default test" finished-at="2025-03-27T17:49:22 IST" duration-ms="10800">
+      <class name="testScripts.MouseActionsTest">
+        <test-method signature="MouseActions()[pri:0, instance:testScripts.MouseActionsTest@18df8434]" started-at="2025-03-27T17:49:12 IST" name="MouseActions" finished-at="2025-03-27T17:49:22 IST" duration-ms="10572" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- relativeLoc -->
-      </class> <!-- testScripts.RelativeLocatorTest -->
+        </test-method> <!-- MouseActions -->
+      </class> <!-- testScripts.MouseActionsTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
