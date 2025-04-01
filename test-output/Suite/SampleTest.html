@@ -1,0 +1,232 @@
+<html>
+<head>
+<title>TestNG:  SampleTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>SampleTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>18/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Apr 01 17:11:49 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>183 seconds (183977 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testScripts.ExpWaitTest.waitTest()'><b>waitTest</b><br>Test class: testScripts.ExpWaitTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text (&apos;Data loaded with AJAX get request.&apos;) to be present in element [[ChromeDriver: chrome on windows (0a7f386de97f9c4b35842d4ebc12a3fd)] -&gt; css selector: div#content] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59732}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59732/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0a7f386de97f9c4b35842d4ebc12a3fd
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at testScripts.ExpWaitTest.waitTest(ExpWaitTest.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1769042905", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1769042905'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for text (&apos;Data loaded with AJAX get request.&apos;) to be present in element [[ChromeDriver: chrome on windows (0a7f386de97f9c4b35842d4ebc12a3fd)] -&gt; css selector: div#content] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59732}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59732/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0a7f386de97f9c4b35842d4ebc12a3fd
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at testScripts.ExpWaitTest.waitTest(ExpWaitTest.java:19)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>18</td>
+<td>testScripts.ExpWaitTest@248e319b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testScripts.GooglePageTest.seleniumSearch()'><b>seleniumSearch</b><br>Test class: testScripts.GooglePageTest</td>
+<td></td>
+<td>7</td>
+<td>testScripts.GooglePageTest@25ce9dc4</td></tr>
+<tr>
+<td title='testScripts.RadioChkBoxTest.selectRadioTest()'><b>selectRadioTest</b><br>Test class: testScripts.RadioChkBoxTest</td>
+<td></td>
+<td>4</td>
+<td>testScripts.RadioChkBoxTest@8f2ef19</td></tr>
+<tr>
+<td title='testScripts.NewTest.f()'><b>f</b><br>Test class: testScripts.NewTest</td>
+<td></td>
+<td>0</td>
+<td>testScripts.NewTest@173ed316</td></tr>
+<tr>
+<td title='testScripts.MouseActionsTest.MouseActions()'><b>MouseActions</b><br>Test class: testScripts.MouseActionsTest</td>
+<td></td>
+<td>10</td>
+<td>testScripts.MouseActionsTest@793f29ff</td></tr>
+<tr>
+<td title='testScripts.RelativeLocatorTest.relativeLoc()'><b>relativeLoc</b><br>Test class: testScripts.RelativeLocatorTest</td>
+<td></td>
+<td>3</td>
+<td>testScripts.RelativeLocatorTest@27406a17</td></tr>
+<tr>
+<td title='testScripts.PageLoadTest.pageLoadTest()'><b>pageLoadTest</b><br>Test class: testScripts.PageLoadTest</td>
+<td></td>
+<td>11</td>
+<td>testScripts.PageLoadTest@17f62e33</td></tr>
+<tr>
+<td title='testScripts.DynamicElementTest.dynamicElement()'><b>dynamicElement</b><br>Test class: testScripts.DynamicElementTest</td>
+<td></td>
+<td>8</td>
+<td>testScripts.DynamicElementTest@5d0bf09b</td></tr>
+<tr>
+<td title='testScripts.DropDownTest.selectValue()'><b>selectValue</b><br>Test class: testScripts.DropDownTest</td>
+<td></td>
+<td>6</td>
+<td>testScripts.DropDownTest@644baf4a</td></tr>
+<tr>
+<td title='testScripts.ShadowDOMTest.shadowDOM()'><b>shadowDOM</b><br>Test class: testScripts.ShadowDOMTest</td>
+<td></td>
+<td>5</td>
+<td>testScripts.ShadowDOMTest@470734c3</td></tr>
+<tr>
+<td title='testScripts.WebTableTest.practice()'><b>practice</b><br>Test class: testScripts.WebTableTest</td>
+<td></td>
+<td>10</td>
+<td>testScripts.WebTableTest@4b741d6d</td></tr>
+<tr>
+<td title='testScripts.DisplayTest.automationBookStore()'><b>automationBookStore</b><br>Test class: testScripts.DisplayTest</td>
+<td></td>
+<td>9</td>
+<td>testScripts.DisplayTest@2cf3d63b</td></tr>
+<tr>
+<td title='testScripts.WinPopupTest.winPop()'><b>winPop</b><br>Test class: testScripts.WinPopupTest</td>
+<td></td>
+<td>21</td>
+<td>testScripts.WinPopupTest@69e153c5</td></tr>
+<tr>
+<td title='testScripts.ToolTipTest.toolTip()'><b>toolTip</b><br>Test class: testScripts.ToolTipTest</td>
+<td></td>
+<td>6</td>
+<td>testScripts.ToolTipTest@7674f035</td></tr>
+<tr>
+<td title='testScripts.AlertTest.variousAlerts()'><b>variousAlerts</b><br>Test class: testScripts.AlertTest</td>
+<td></td>
+<td>6</td>
+<td>testScripts.AlertTest@76b1e9b8</td></tr>
+<tr>
+<td title='testScripts.AutoCcompleteTest.autoCompleteTest()'><b>autoCompleteTest</b><br>Test class: testScripts.AutoCcompleteTest</td>
+<td></td>
+<td>32</td>
+<td>testScripts.AutoCcompleteTest@2eae8e6e</td></tr>
+<tr>
+<td title='testScripts.DownloadTest.fileDownload()'><b>fileDownload</b><br>Test class: testScripts.DownloadTest</td>
+<td></td>
+<td>9</td>
+<td>testScripts.DownloadTest@74ea2410</td></tr>
+<tr>
+<td title='testScripts.JSExecTest.test()'><b>test</b><br>Test class: testScripts.JSExecTest</td>
+<td></td>
+<td>5</td>
+<td>testScripts.JSExecTest@15bb5034</td></tr>
+<tr>
+<td title='testScripts.UploadFileTest.uploadFile()'><b>uploadFile</b><br>Test class: testScripts.UploadFileTest</td>
+<td></td>
+<td>2</td>
+<td>testScripts.UploadFileTest@2af004b</td></tr>
+</table><p>
+</body>
+</html>
