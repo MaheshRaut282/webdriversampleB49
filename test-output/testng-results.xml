@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-27T17:49:11 IST" name="Default suite" finished-at="2025-03-27T17:49:22 IST" duration-ms="10800">
+  <suite started-at="2025-03-28T18:02:35 IST" name="Default suite" finished-at="2025-03-28T18:02:39 IST" duration-ms="3736">
     <groups>
     </groups>
-    <test started-at="2025-03-27T17:49:11 IST" name="Default test" finished-at="2025-03-27T17:49:22 IST" duration-ms="10800">
-      <class name="testScripts.MouseActionsTest">
-        <test-method signature="MouseActions()[pri:0, instance:testScripts.MouseActionsTest@18df8434]" started-at="2025-03-27T17:49:12 IST" name="MouseActions" finished-at="2025-03-27T17:49:22 IST" duration-ms="10572" status="PASS">
+    <test started-at="2025-03-28T18:02:35 IST" name="Default test" finished-at="2025-03-28T18:02:39 IST" duration-ms="3736">
+      <class name="testScripts.ToolTipTest">
+        <test-method signature="toolTip()[pri:0, instance:testScripts.ToolTipTest@5677323c]" started-at="2025-03-28T18:02:35 IST" name="toolTip" finished-at="2025-03-28T18:02:39 IST" duration-ms="3686" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- MouseActions -->
-      </class> <!-- testScripts.MouseActionsTest -->
+        </test-method> <!-- toolTip -->
+      </class> <!-- testScripts.ToolTipTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
