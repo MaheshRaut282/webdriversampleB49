@@ -3,12 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testScripts.LoginTest">
+      <class name="testScripts.ExtentReportTest">
         <methods>
+          <include name="finishExtent"/>
           <include name="setup"/>
-          <include name="validLogin" invocation-numbers="1 2"/>
+          <include name="teardown"/>
+          <include name="setupExtent"/>
+          <include name="storiesSearch"/>
         </methods>
-      </class> <!-- testScripts.LoginTest -->
+      </class> <!-- testScripts.ExtentReportTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
