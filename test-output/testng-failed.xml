@@ -3,15 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testScripts.ExtentReportTest">
+      <class name="GridTest.RemoteWebSampleTest">
         <methods>
-          <include name="finishExtent"/>
-          <include name="setup"/>
-          <include name="teardown"/>
-          <include name="setupExtent"/>
-          <include name="storiesSearch"/>
+          <include name="search"/>
         </methods>
-      </class> <!-- testScripts.ExtentReportTest -->
+      </class> <!-- GridTest.RemoteWebSampleTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
